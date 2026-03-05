@@ -1,0 +1,187 @@
+/* ---------------------------
+   RICHBLACK
+---------------------------- */
+.text-richblack-5 { color:#F1F2FF !important; }
+.text-richblack-25 { color:#DBDDEA !important; }
+.text-richblack-50 { color:#C5C7D4 !important; }
+.text-richblack-100 { color:#AFB2BF !important; }
+.text-richblack-200 { color:#999DAA !important; }
+.text-richblack-300 { color:#838894 !important; }
+.text-richblack-400 { color:#6E727F !important; }
+.text-richblack-500 { color:#585D69 !important; }
+.text-richblack-600 { color:#424854 !important; }
+.text-richblack-700 { color:#2C333F !important; }
+.text-richblack-800 { color:#161D29 !important; }
+.text-richblack-900 { color:#000814 !important; }
+
+.bg-richblack-5 { background:#F1F2FF !important; }
+.bg-richblack-25 { background:#DBDDEA !important; }
+.bg-richblack-50 { background:#C5C7D4 !important; }
+.bg-richblack-100 { background:#AFB2BF !important; }
+.bg-richblack-200 { background:#999DAA !important; }
+.bg-richblack-300 { background:#838894 !important; }
+.bg-richblack-400 { background:#6E727F !important; }
+.bg-richblack-500 { background:#585D69 !important; }
+.bg-richblack-600 { background:#424854 !important; }
+.bg-richblack-700 { background:#2C333F !important; }
+.bg-richblack-800 { background:#161D29 !important; }
+.bg-richblack-900 { background:#000814 !important; }
+
+.border-richblack-5 { border-color:#F1F2FF !important; }
+.border-richblack-25 { border-color:#DBDDEA !important; }
+.border-richblack-50 { border-color:#C5C7D4 !important; }
+.border-richblack-100 { border-color:#AFB2BF !important; }
+.border-richblack-200 { border-color:#999DAA !important; }
+.border-richblack-300 { border-color:#838894 !important; }
+.border-richblack-400 { border-color:#6E727F !important; }
+.border-richblack-500 {border-color:#585D69 !important; }
+.border-richblack-600 { border-color:#424854 !important; }
+.border-richblack-700 { border-color:#2C333F !important; }
+.border-richblack-800 { border-color:#161D29 !important; }
+.border-richblack-900 { border-color:#000814 !important; }
+
+
+/* ---------------------------
+   RICHBLUE
+---------------------------- */
+.text-richblue-5 { color:#ECF5FF !important; }
+.text-richblue-25 { color:#C6D6E1 !important; }
+.text-richblue-50 { color:#A0B7C3 !important; }
+.text-richblue-100 { color:#7A98A6 !important; }
+.text-richblue-200 { color:#537988 !important; }
+.text-richblue-300 { color:#2D5A6A !important; }
+.text-richblue-400 { color:#073B4C !important; }
+.text-richblue-500 { color:#063544 !important; }
+.text-richblue-600 { color:#042E3B !important; }
+.text-richblue-700 { color:#032833 !important; }
+.text-richblue-800 { color:#01212A !important; }
+.text-richblue-900 { color:#001B22 !important; }
+
+.bg-richblue-5 { background:#ECF5FF !important; }
+.bg-richblue-25 { background:#C6D6E1 !important; }
+.bg-richblue-50 { background:#A0B7C3 !important; }
+.bg-richblue-100 { background:#7A98A6 !important; }
+.bg-richblue-200 { background:#537988 !important; }
+.bg-richblue-300 { background:#2D5A6A !important; }
+.bg-richblue-400 { background:#073B4C !important; }
+.bg-richblue-500 { background:#063544 !important; }
+.bg-richblue-600 { background:#042E3B !important; }
+.bg-richblue-700 { background:#032833 !important; }
+.bg-richblue-800 { background:#01212A !important; }
+.bg-richblue-900 { background:#001B22 !important; }
+
+/* ---------------------------
+   BLUE
+---------------------------- */
+.text-blue-5 { color:#EAF5FF !important; }
+.text-blue-25 { color:#B4DAEC !important; }
+.text-blue-50 { color:#7EC0D9 !important; }
+.text-blue-100 { color:#47A5C5 !important; }
+.text-blue-200 { color:#118AB2 !important; }
+.text-blue-300 { color:#0F7A9D !important; }
+.text-blue-400 { color:#0C6A87 !important; }
+.text-blue-500 { color:#0A5A72 !important; }
+.text-blue-600 { color:#074B5D !important; }
+.text-blue-700 { color:#053B48 !important; }
+.text-blue-800 { color:#022B32 !important; }
+.text-blue-900 { color:#001B1D !important; }
+
+.bg-blue-5 { background:#EAF5FF !important; }
+.bg-blue-25 { background:#B4DAEC !important; }
+.bg-blue-50 { background:#7EC0D9 !important; }
+.bg-blue-100 { background:#47A5C5 !important; }
+.bg-blue-200 { background:#118AB2 !important; }
+.bg-blue-300 { background:#0F7A9D !important; }
+.bg-blue-400 { background:#0C6A87 !important; }
+.bg-blue-500 { background:#0A5A72 !important; }
+.bg-blue-600 { background:#074B5D !important; }
+.bg-blue-700 { background:#053B48 !important; }
+.bg-blue-800 { background:#022B32 !important; }
+.bg-blue-900 { background:#001B1D !important; }
+
+/* ---------------------------
+   CARIBBEAN GREEN
+---------------------------- */
+.text-caribbeangreen-5 { color:#C1FFFD !important; }
+.text-caribbeangreen-25 { color:#83F1DE !important; }
+.text-caribbeangreen-50 { color:#44E4BF !important; }
+.text-caribbeangreen-100 { color:#06D6A0 !important; }
+.text-caribbeangreen-200 { color:#05BF8E !important; }
+.text-caribbeangreen-300 { color:#05A77B !important; }
+.text-caribbeangreen-400 { color:#049069 !important; }
+.text-caribbeangreen-500 { color:#037957 !important; }
+.text-caribbeangreen-600 { color:#026144 !important; }
+.text-caribbeangreen-700 { color:#014A32 !important; }
+.text-caribbeangreen-800 { color:#01321F !important; }
+.text-caribbeangreen-900 { color:#001B0D !important; }
+
+.bg-caribbeangreen-5 { background:#C1FFFD !important; }
+.bg-caribbeangreen-25 { background:#83F1DE !important; }
+.bg-caribbeangreen-50 { background:#44E4BF !important; }
+.bg-caribbeangreen-100 { background:#06D6A0 !important; }
+.bg-caribbeangreen-200 { background:#05BF8E !important; }
+.bg-caribbeangreen-300 { background:#05A77B !important; }
+.bg-caribbeangreen-400 { background:#049069 !important; }
+.bg-caribbeangreen-500 { background:#037957 !important; }
+.bg-caribbeangreen-600 { background:#026144 !important; }
+.bg-caribbeangreen-700 { background:#014A32 !important; }
+.bg-caribbeangreen-800 { background:#01321F !important; }
+.bg-caribbeangreen-900 { background:#001B0D !important; }
+
+/* ---------------------------
+   YELLOW
+---------------------------- */
+.text-yellow-5 { color:#FFF970 !important; }
+.text-yellow-25 { color:#FFE83D !important; }
+.text-yellow-50 { color:#FFD60A !important; }
+.text-yellow-100 { color:#E7C009 !important; }
+.text-yellow-200 { color:#CFAB08 !important; }
+.text-yellow-300 { color:#B69507 !important; }
+.text-yellow-400 { color:#9E8006 !important; }
+.text-yellow-500 { color:#866A04 !important; }
+.text-yellow-600 { color:#6E5503 !important; }
+.text-yellow-700 { color:#553F02 !important; }
+.text-yellow-800 { color:#3D2A01 !important; }
+.text-yellow-900 { color:#251400 !important; }
+
+.bg-yellow-5 { background:#FFF970 !important; }
+.bg-yellow-25 { background:#FFE83D !important; }
+.bg-yellow-50 { background:#FFD60A !important; }
+.bg-yellow-100 { background:#E7C009 !important; }
+.bg-yellow-200 { background:#CFAB08 !important; }
+.bg-yellow-300 { background:#B69507 !important; }
+.bg-yellow-400 { background:#9E8006 !important; }
+.bg-yellow-500 { background:#866A04 !important; }
+.bg-yellow-600 { background:#6E5503 !important; }
+.bg-yellow-700 { background:#553F02 !important; }
+.bg-yellow-800 { background:#3D2A01 !important; }
+.bg-yellow-900 { background:#251400 !important; }
+
+/* ---------------------------
+   PURE GREYS
+---------------------------- */
+.text-puregrey-5 { color:#F9F9F9 !important; }
+.text-puregrey-25 { color:#E2E2E2 !important; }
+.text-puregrey-50 { color:#CCCCCC !important; }
+.text-puregrey-100 { color:#B5B5B5 !important; }
+.text-puregrey-200 { color:#9E9E9E !important; }
+.text-puregrey-300 { color:#888888 !important; }
+.text-puregrey-400 { color:#717171 !important; }
+.text-puregrey-500 { color:#5B5B5B !important; }
+.text-puregrey-600 { color:#444444 !important; }
+.text-puregrey-700 { color:#2D2D2D !important; }
+.text-puregrey-800 { color:#171717 !important; }
+.text-puregrey-900 { color:#141414 !important; }
+
+.bg-puregrey-5 { background:#F9F9F9 !important; }
+.bg-puregrey-25 { background:#E2E2E2 !important; }
+.bg-puregrey-50 { background:#CCCCCC !important; }
+.bg-puregrey-100 { background:#B5B5B5 !important; }
+.bg-puregrey-200 { background:#9E9E9E !important; }
+.bg-puregrey-300 { background:#888888 !important; }
+.bg-puregrey-400 { background:#717171 !important; }
+.bg-puregrey-500 { background:#5B5B5B !important; }
+.bg-puregrey-600 { background:#444444 !important; }
+.bg-puregrey-700 { background:#2D2D2D !important; }
+.bg-puregrey-800 { background:#171717 !important; }
+.bg-puregrey-900 { background:#141414 !important; }

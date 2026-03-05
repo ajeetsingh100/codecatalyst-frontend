@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --bs-body-font-family: "Roboto", sans-serif;
+  --bs-body-font-weight: 500;
+}
+
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--bs-body-font-family);
+  font-optical-sizing: auto;
+  font-weight: var(--bs-body-font-weight);
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+background-color: #F8FAFC;
+  
+}
+.text-thin{
+  font-weight:400;
+}
+.text-title{
+  font-weight: 700;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.dropdown-menu{
+  cursor:pointer
+}
+.pointer{
+  cursor: pointer;
+}
+.btn-no-hover {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+
+.no-hover:hover,
+.no-hover:focus,
+.no-hover:active {
+  background-color: inherit !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+.error{
+  font-size:14px;
+  color:red
+}
+.dash-link-active{
+  background-color: chocolate;
+}
+
+
+/* 🔥 Swiper default arrow REMOVE */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: "" !important;
+  display: none !important;
+}
+
+/* 🔥 Bootstrap icons inject */
+.swiper-button-prev::before {
+  content: "\F284"; /* bi-chevron-left */
+  font-family: "bootstrap-icons" !important;
+  font-size: 18px;
+   font-weight: 700;
+  color:black;
+}
+
+.swiper-button-next::before {
+  content: "\F285"; /* bi-chevron-right */
+  font-family: "bootstrap-icons" !important;
+  font-size: 18px;
+  font-weight: 700;
+  color:black;
+}
+
+/* button style */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 42px;
+  height: 42px;
+  background:white;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0px 0px 1.7px black;
+
+}
+.swiper-button-prev svg,.swiper-button-next svg{
+  display:none;
+}
+
+/* border alignment */
+.swiper-button-prev {
+  left: -20px;
+}
+.swiper-button-next {
+  right: -20px;
+}
+
+/* disabled */
+.swiper-button-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
