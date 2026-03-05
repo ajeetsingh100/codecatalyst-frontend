@@ -9,7 +9,7 @@ import { login } from '../services/operations/authAPI'
 import { Link } from 'react-router-dom'
 
 function Login(){
-    const [showPassword,setShowPassword]=useState(false)
+    
     const {register,handleSubmit,formState:{errors}}=useForm()
     const dispatch=useDispatch()
     const navigate=useNavigate()

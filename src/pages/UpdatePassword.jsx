@@ -12,7 +12,6 @@ const UpdatePassword = () => {
   const dispatch=useDispatch()
   const [passChange,setPassChange]=useState(false)
   const {token}=useParams()
-  const {loading}=useSelector((state)=>state.auth)
   const handleFormData=(data)=>{
     const {pass,confirmPass}=data
     dispatch(resetPassword(pass,confirmPass,token,setPassChange))

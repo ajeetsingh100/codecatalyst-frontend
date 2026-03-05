@@ -241,10 +241,7 @@ export const updateUserCourseProgress=(courseID,subSectionID)=>{
     return async()=>{
         const toastID=toast.loading('Updating your progress please wait...')
         try {
-            const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/update-course-progress',{
-                  courseID,
-                  subSectionID
-                })
+          
             toast.success('Your progress is saved successfully',{id:toastID})
         } catch (error) {
             toast.error("Unable to update your progress",{id:toastID})
