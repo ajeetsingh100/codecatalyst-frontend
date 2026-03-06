@@ -99,41 +99,18 @@ const CourseDetailPage = () => {
 
               <div className="sticky-lg-top" style={{top:"90px"}}>
 
-                <div className="card shadow">
-
-                 
-
-                  <div className="card-body">
-                       <img
-                    src={courseDetails?.thumbnail}
-                    className=" img-fluid"
-                    alt=""
-                  />
-                    <div className="fs-4 fw-bold">
-                      ₹{courseDetails?.price}
-                    </div>
-
-                  </div>
-
-                  <div className="d-flex flex-column gap-2 px-3 pb-3">
-
-                    <button
-                      className="btn btn-outline-primary"
-                      onClick={addCourseToCart}
-                    >
-                      Add to Cart
-                    </button>
-
-                    <button
-                      className="btn btn-warning"
-                      onClick={buyCourse}
-                    >
-                      Buy Course
-                    </button>
-
-                  </div>
-
-                </div>
+                
+                            <div className="card shadow">                     
+                                <div className='card-body'>
+                                  <img src={courseDetails?.thumbnail} className='card-img-top' alt="" />
+                                    <div className='card-text fs-4'>₹{courseDetails?.price}</div>
+                                </div>
+                                <div className='d-flex flex-column gap-2 px-2 pb-3'>
+                                    <button type='button' className='btn btn-outline-primary' onClick={()=>addCourseToCart()}>Add to Cart</button>
+                                    <button type='button' className='btn btn-warning' onClick={()=>buyCourse()}>Buy Course</button>                                    
+                                </div>
+                            </div>
+                        
 
               </div>
 
