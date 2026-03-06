@@ -101,14 +101,14 @@ const CourseDetailPage = () => {
 
                 <div className="card shadow">
 
-                  <img
-                    src={courseDetails?.thumbnail}
-                    className="card-img-top img-fluid"
-                    alt=""
-                  />
+                 
 
                   <div className="card-body">
-
+                       <img
+                    src={courseDetails?.thumbnail}
+                    className=" img-fluid"
+                    alt=""
+                  />
                     <div className="fs-4 fw-bold">
                       ₹{courseDetails?.price}
                     </div>
