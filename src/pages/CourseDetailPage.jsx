@@ -51,7 +51,7 @@ const CourseDetailPage = () => {
     <div>
 
       {/* HERO */}
-      <section className="container-fluid bg-dark text-white py-5">
+      <section className="container-fluid bg-richblack-900 text-white py-5">
 
         <div className="container">
 
