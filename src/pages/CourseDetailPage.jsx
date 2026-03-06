@@ -97,7 +97,7 @@ const CourseDetailPage = () => {
             {/* Purchase Card */}
             <div className="col-12 col-lg-4">
 
-              <div className="sticky-lg-top" style={{top:"90px"}}>
+              <div style={{top:"90px"}}>
 
                 
                             <div className="card shadow">                     
