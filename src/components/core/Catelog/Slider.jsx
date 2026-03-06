@@ -12,22 +12,36 @@ const Slider = ({courses}) => {
   return (
     <div>
         <Swiper
-      // install Swiper modules
-          modules={[Navigation, FreeMode]}
-          spaceBetween={25}
-          slidesPerView={4}
-          navigation={true}                
-        >
-            {
-              courses?.map(course=> 
-                {return (<SwiperSlide>
-                  <SwiperCard course={course}/>
-                </SwiperSlide>)}
-              )
-            }
-            
-     </Swiper>
-    
+  modules={[Navigation, FreeMode]}
+  spaceBetween={20}
+  navigation={true}
+  freeMode={true}
+
+  breakpoints={{
+    320: {
+      slidesPerView: 1
+    },
+    576: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    },
+    1024: {
+      slidesPerView: 4
+    }
+  }}
+>
+
+{
+  courses?.map((course) => (
+    <SwiperSlide key={course._id}>
+      <SwiperCard course={course}/>
+    </SwiperSlide>
+  ))
+}
+
+</Swiper>
     </div>
   )
 }
