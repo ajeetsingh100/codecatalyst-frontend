@@ -14,7 +14,7 @@ export const addCourse=(formData)=>{
     return async(dispatch)=>{
         const toastID=toast.loading('Creating course please wait...')
         try {
-            const response=await apiconnector("POST",'https://code-catalyst-wkk9.onrender.com/api/v1/course/create-course',formData)
+            const response=await apiconnector("POST",'https://code-catalyst-backend.onrender.com/api/v1/course/create-course',formData)
             console.log(response)
             dispatch(setCourse(response.data.course))
             //localStorage.setItem('course',JSON.stringify(response.data.course))
@@ -33,7 +33,7 @@ export const updateCourse=(formData)=>{
     return async(dispatch)=>{
         const toastID=toast.loading('Modifying course details...')
         try {
-            const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/edit-course',formData)
+            const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/edit-course',formData)
             console.log('response from course API',response.data.updatedCourse)
             dispatch(setStep(2))
             dispatch(setEditCourse(false))
@@ -51,7 +51,7 @@ export const changeCourseStatus=(formData)=>{
     return async(dispatch)=>{
         const toastID=toast.loading('Please Wait...')
         try {
-            const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/edit-course',formData)
+            const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/edit-course',formData)
             console.log(response)
             toast.success('Your course is successfully published',{id:toastID})
             dispatch(setStep(1))
@@ -71,7 +71,7 @@ export const createSection=(formData)=>{
     return async(dispatch)=>{
         const toastID=toast.loading('Section Creation is in Progress')
         try {
-            const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/add-section',formData)
+            const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/add-section',formData)
             console.log(response)
             dispatch(setCourse(response.data.updatedCourse))
             //localStorage.setItem('course',JSON.stringify(response.data.updatedCourse))
@@ -87,7 +87,7 @@ export const updateSection=(formData)=>{
     return async(dispatch)=>{
         const toastID=toast.loading('Updating Section Name....')
         try {
-            const response=await apiconnector('PUT','https://code-catalyst-wkk9.onrender.com/api/v1/course/update-section',formData)
+            const response=await apiconnector('PUT','https://code-catalyst-backend.onrender.com/api/v1/course/update-section',formData)
             console.log('response from updateSection',response.data.updatedCourse)
             dispatch(setCourse(response.data.updatedCourse))  
            // localStorage.setItem('course',JSON.stringify(response.data.updatedCourse))
@@ -104,7 +104,7 @@ export const deleteSection=(courseID,sectionID)=>{
         console.log(`courseID ${courseID}, sectionID: ${sectionID}`)
         const toastID=toast.loading('Deleting Section...')
         try {
-            const response=await apiconnector('DELETE','https://code-catalyst-wkk9.onrender.com/api/v1/course/delete-section',{
+            const response=await apiconnector('DELETE','https://code-catalyst-backend.onrender.com/api/v1/course/delete-section',{
                 courseID,
                 sectionID
             })
@@ -130,9 +130,9 @@ export const createSubSection=(course,formData)=>{
         const toastID=toast.loading('Adding Sub Section Please Wait')
         try {
             dispatch(setLoading(true))
-            const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/add-sub-section',formData)
+            const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/add-sub-section',formData)
             console.log(response.data)
-            const response1=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/get-course-details',{courseID:course._id})
+            const response1=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/get-course-details',{courseID:course._id})
             console.log('response from createSubSection:',response1.data)
       
             dispatch(setCourse(response1.data.courseDetails))
@@ -151,7 +151,7 @@ export const updateSubSection=(formData)=>{
     return async(dispatch)=>{
         const toastID=toast.loading('Updating Sub Section...')
         try {
-            const response=await apiconnector('PUT','https://code-catalyst-wkk9.onrender.com/api/v1/course/update-sub-section',formData)
+            const response=await apiconnector('PUT','https://code-catalyst-backend.onrender.com/api/v1/course/update-sub-section',formData)
             console.log(response.data)
             dispatch(setCourse(response.data.updatedCourse))
             //localStorage.setItem('course',JSON.stringify(response.data.updatedCourse))
@@ -170,7 +170,7 @@ export const deleteSubSection=(courseID,sectionID,subSectionID)=>{
         console.log(`courseID: ${courseID} sectionID: ${sectionID} subSectionID: ${subSectionID} `)
         const toastID=toast.loading('Deleting SubSection...')
         try {
-            const response=await apiconnector('DELETE','https://code-catalyst-wkk9.onrender.com/api/v1/course/delete-sub-section',{
+            const response=await apiconnector('DELETE','https://code-catalyst-backend.onrender.com/api/v1/course/delete-sub-section',{
                 courseID,
                 sectionID,
                 subSectionID
@@ -196,7 +196,7 @@ export const createRateAndReview=(courseID,rating,review)=>{
    return async(dispatch)=>{
      const toastID=toast.loading('Adding your review please wait...')
     try {
-          const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/createRating',{
+          const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/createRating',{
             courseID,
             rating,
             review
@@ -219,7 +219,7 @@ export const updateUserReview=(courseID,rating,review)=>{
     return async(dispatch)=>{
         const toastID=toast.loading('Adding your review please wait...')
     try {
-        const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/update-user-review',{
+        const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/update-user-review',{
             courseID,
             rating,
             review

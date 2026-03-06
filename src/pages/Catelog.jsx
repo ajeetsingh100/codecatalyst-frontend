@@ -11,7 +11,7 @@ const Catelog = () => {
   const searchedCategory=location.pathname.split('/').at(-1)
 
   async function findAllCategory(){
-    const response=await apiconnector("GET",'https://code-catalyst-wkk9.onrender.com/api/v1/course/show-all-categories')
+    const response=await apiconnector("GET",'https://code-catalyst-backend.onrender.com/api/v1/course/show-all-categories')
     return response.data.allCategory
   }
   
@@ -19,7 +19,7 @@ const Catelog = () => {
     const allCategories=await findAllCategory()
     const categoryFound=allCategories.find(category=>category.categoryName===searchedCategory)
     console.log('category founded',)
-    const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/get-category-page-details',{categoryID:categoryFound._id})
+    const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/get-category-page-details',{categoryID:categoryFound._id})
     setCourses(response.data.allCourses)
   }
 

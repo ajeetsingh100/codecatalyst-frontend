@@ -81,7 +81,7 @@ const CourseVideo = () => {
     console.log('video ended')
     setIsFirstVideoFlag(!isFirstVideo())
     setIsLastVideoFlag(!isLastVideo())   
-    const response= await apiconnector("post",'https://code-catalyst-wkk9.onrender.com/api/v1/course/check-user-progress',{
+    const response= await apiconnector("post",'https://code-catalyst-backend.onrender.com/api/v1/course/check-user-progress',{
       courseID,
       subSectionID
     })

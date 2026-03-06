@@ -50,7 +50,7 @@ try {
  }
  useEffect(()=>{
   const formReset=async()=>{
-    const response=await apiconnector('post','https://code-catalyst-wkk9.onrender.com/api/v1/course/check-user-review',{courseID})
+    const response=await apiconnector('post','https://code-catalyst-backend.onrender.com/api/v1/course/check-user-review',{courseID})
     console.log('review',response.data)
     reset({
       review:response.data.review[0]?.review,

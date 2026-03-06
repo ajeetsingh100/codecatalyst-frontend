@@ -18,7 +18,7 @@ const ViewCourse = () => {
     const dispatch=useDispatch()
      useEffect(()=>{
     const courseDetail= async()=>{
-      const response= await apiconnector("POST",`https://code-catalyst-wkk9.onrender.com/api/v1/course/get-full-course-details`,{courseId:courseID})
+      const response= await apiconnector("POST",`https://code-catalyst-backend.onrender.com/api/v1/course/get-full-course-details`,{courseId:courseID})
       console.log(response.data.courseDetails)
       dispatch(setEnrolledCourseDetail(response.data.courseDetails))
       dispatch(setEnrolledCourseSection(response.data.courseDetails.courseSection))

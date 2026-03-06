@@ -16,7 +16,7 @@ const MyCourses = () => {
     navigate('/dashboard/add-course')
   }
    async function loadCourse(courseID){
-     const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/load-course',{courseID})
+     const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/load-course',{courseID})
      console.log('load course for edit',response.data.course)
      dispatch(setCourse(response.data.course))
      dispatch(setEditCourse(true))
@@ -24,7 +24,7 @@ const MyCourses = () => {
   }
   async function deleteCourse(){
     console.log(deleteCourseID)
-    const response= await apiconnector('DELETE','https://code-catalyst-wkk9.onrender.com/api/v1/course/delete-course',{courseID:deleteCourseID})
+    const response= await apiconnector('DELETE','https://code-catalyst-backend.onrender.com/api/v1/course/delete-course',{courseID:deleteCourseID})
     if(response.data.success){
         const modalElement=document.getElementById('exampleModal')
         const modal=Modal.getOrCreateInstance(modalElement)
@@ -34,7 +34,7 @@ const MyCourses = () => {
     fetchallCourse()
 }
     const fetchallCourse=async()=>{
-        const response=await apiconnector('GET','https://code-catalyst-wkk9.onrender.com/api/v1/course/get-instructor-courses')  
+        const response=await apiconnector('GET','https://code-catalyst-backend.onrender.com/api/v1/course/get-instructor-courses')  
         console.log(response.data)
         if(response.data.instructorCourses.length===0){
         console.log('line executed')

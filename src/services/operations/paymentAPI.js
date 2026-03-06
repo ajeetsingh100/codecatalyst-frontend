@@ -26,7 +26,7 @@ export const createOrder=async(courses,navigate,dispatch,userDetails)=>{
             toast.error("RazorPay SDK failed to load");
             return;
         }
-        const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/payment/capturePayment',{courses:courses})
+        const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/payment/capturePayment',{courses:courses})
         console.log('MY_VAR:',process.env.REACT_APP_RAZORPAY_KEY)
         const options={
             key:process.env.REACT_APP_RAZORPAY_KEY,
@@ -61,7 +61,7 @@ export const createOrder=async(courses,navigate,dispatch,userDetails)=>{
 }
 async function  sendEmail(response1,amount){
     try {
-        await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/payment/sendPaymentSuccessEmail',{
+        await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/payment/sendPaymentSuccessEmail',{
             orderId:response1.razorpay_order_id,
             paymentId:response1.razorpay_payment_id,
             amount
@@ -76,7 +76,7 @@ async function  sendEmail(response1,amount){
 async function verifyPayment(formData,navigate,dispatch){
     const toastID=toast.loading("Verifying Payment...")
     try {
-        const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/payment/verifyPayment',formData)
+        const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/payment/verifyPayment',formData)
         console.log('verifyPayment response:',response)
         toast.success('Payment is verified',{id:toastID})
         dispatch(resetCart())

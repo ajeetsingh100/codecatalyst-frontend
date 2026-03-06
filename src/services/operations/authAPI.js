@@ -7,7 +7,7 @@ export const login=(email,password,navigate)=>{
         const toastID=toast.loading("Signing in")
 
         try {
-            const response=await apiconnector('post','https://code-catalyst-wkk9.onrender.com/api/v1/user/login',
+            const response=await apiconnector('post','https://code-catalyst-backend.onrender.com/api/v1/user/login',
                 {
                     email,
                     password
@@ -46,7 +46,7 @@ export const sendOTP=(email,navigate)=>{
     return async(dispatch)=>{
         dispatch(setLoading(true))
         try {
-            const response=await apiconnector("POST",'https://code-catalyst-wkk9.onrender.com/api/v1/user/sendotp',{
+            const response=await apiconnector("POST",'https://code-catalyst-backend.onrender.com/api/v1/user/sendotp',{
                 email
             })
             console.log('hello',response)
@@ -68,7 +68,7 @@ export const resetPasswordToken=(email,setSentEmail,setEmail)=>{
         const toastID=toast.loading("Sending Email...")
         dispatch(setLoading(true))
         try {
-            const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/user/reset-password-token',{
+            const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/user/reset-password-token',{
                 email
             })
             console.log(response)
@@ -87,7 +87,7 @@ export const resetPassword=(pass,confirmPass,token,setPassChange)=>{
     return async(dispatch)=>{
         const toastID=toast.loading('please wait...')        
         try {
-            const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/user/reset-password',{
+            const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/user/reset-password',{
                 pass,
                 confirmPass,
                 token
@@ -109,7 +109,7 @@ export const signUp=(signUpData,otp,navigate)=>{
         
         dispatch(setLoading(true))
         try {
-            const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/user/signup',{
+            const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/user/signup',{
                 ...signUpData,
                 otp
             })

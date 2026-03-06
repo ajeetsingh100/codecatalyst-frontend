@@ -56,7 +56,7 @@ const MyDashboard = () => {
 
       useEffect(()=>{
         const loadUserStat=async()=>{
-            const response=await apiconnector("get",'https://code-catalyst-wkk9.onrender.com/api/v1/course/get-instructor-stat')
+            const response=await apiconnector("get",'https://code-catalyst-backend.onrender.com/api/v1/course/get-instructor-stat')
             setUser(response.data.user)
         }
         loadUserStat()

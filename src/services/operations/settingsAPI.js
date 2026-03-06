@@ -6,7 +6,7 @@ export const changeProfilePic=(formData)=>{
    return async(dispatch)=>{
     const toastID=toast.loading('updating profile pic')
     try {
-        const response=await apiconnector('PUT','https://code-catalyst-wkk9.onrender.com/api/v1/profile/update-display-picture',formData)
+        const response=await apiconnector('PUT','https://code-catalyst-backend.onrender.com/api/v1/profile/update-display-picture',formData)
         console.log(response)
         dispatch(setUser(response.data.updatedProfile))
         // localStorage.setItem('user',JSON.stringify(response.data.updatedProfile))
@@ -22,7 +22,7 @@ export const updateProfile=(formData)=>{
    return async(dispatch)=>{
     const toastID=toast.loading('updating profile')
     try {
-        const response=await apiconnector('PUT','https://code-catalyst-wkk9.onrender.com/api/v1/profile/update-profile',formData)
+        const response=await apiconnector('PUT','https://code-catalyst-backend.onrender.com/api/v1/profile/update-profile',formData)
         console.log(response)
         dispatch(setUser(response.data.updatedUser))
         //localStorage.setItem('user',JSON.stringify(response.data.updatedUser))
@@ -39,7 +39,7 @@ export const changePassword=(formData)=>{
    return async(dispatch)=>{
     const toastID=toast.loading('changing password')
     try {
-        const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/user/change-password',formData)
+        const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/user/change-password',formData)
         console.log(response)
         dispatch(setUser(response.data.updatedUser))
         //localStorage.setItem('user',JSON.stringify(response.data.updatedUser))

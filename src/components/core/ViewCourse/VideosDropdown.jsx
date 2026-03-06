@@ -14,7 +14,7 @@ const VideosDropdown = ({setReviewEdit,setEditComment}) => {
   console.log('totalVideo',enrolledCourseCompletedVideo)
   const commentModel=async()=>{
     
-    const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/check-user-review',{
+    const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/check-user-review',{
         courseID
     })
     console.log('comment model',response.data)

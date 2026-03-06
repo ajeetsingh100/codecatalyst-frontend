@@ -23,7 +23,7 @@ const CourseDetailPage = () => {
       createOrder([courseDetails],navigate,dispatch,user)
     }
     async function loadCourseDetails(){
-      const response=await apiconnector('POST','https://code-catalyst-wkk9.onrender.com/api/v1/course/get-course-details',{courseID:courseID})
+      const response=await apiconnector('POST','https://code-catalyst-backend.onrender.com/api/v1/course/get-course-details',{courseID:courseID})
       console.log(response.data)
       setCourseDetails(response.data.courseDetails)
     }

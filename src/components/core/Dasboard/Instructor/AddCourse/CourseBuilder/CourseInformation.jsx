@@ -68,7 +68,7 @@ const CourseInformation = () => {
 
   async function fetchAllCatgories(){
     console.log('before api call')
-     const response=await apiconnector('GET','https://code-catalyst-wkk9.onrender.com/api/v1/course/show-all-categories')
+     const response=await apiconnector('GET','https://code-catalyst-backend.onrender.com/api/v1/course/show-all-categories')
      console.log('after api call')
      console.log('response for category',response.data)
          
