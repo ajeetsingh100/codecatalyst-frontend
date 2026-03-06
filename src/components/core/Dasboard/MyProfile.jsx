@@ -13,7 +13,7 @@ const MyProfile = () => {
 
   return (
     <div className="py-4">
-      <div className="container border shadow p-3 text-white">
+      <div className="container border shadow p-3 text-white" style={{maxWidth:"80rem"}}>
 
         <h1 className="text-dark mb-4">My Profile</h1>
 
